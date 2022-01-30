@@ -168,6 +168,10 @@ a.skip-main:focus, a.skip-main:active {
 	border:20px solid gray;
 }
 
+.mySlides:hover {
+	background-color: gray;
+}
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
 	cursor: pointer;
@@ -285,8 +289,12 @@ a.skip-main:focus, a.skip-main:active {
 	height: auto;
 	float: right;
 	border-radius: 0px;
+	border: 3px solid gray;
 }
 
+.cell2-1 img:hover {
+	transform: scale(1.2);
+}
 .cell2-1 p {
 	justify-items: center;
 	align-items: center;
@@ -307,10 +315,21 @@ a.skip-main:focus, a.skip-main:active {
 	margin: 0px;
 	width: 400px;
 	height: auto;
+	border: 1px solid gray;
+}
+
+.cell2-2 img:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .centerimg {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	width: 800px;
+	height: auto;
+}
+
+.centerimg:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
