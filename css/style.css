@@ -1,0 +1,316 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body {
+	margin: 1%;
+	padding: 1%;
+	font-size: 150%;
+	height: 100%;
+	font-family: 'Segoe UI',sans-serif;
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	font-family: Verdana;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+
+/*Style the images*/
+img{
+    height: 200px;
+    width:auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 1.5em; 
+	font-weight: bold;
+	padding: 10px;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	font-style: italic;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+
+footer {
+	width: 100%;
+	height: 100%;
+
+}
+
+
+/*Add borders around the main components and some
+space too*/
+header, main, h1{
+	margin: 10px 0;
+}
+
+p {
+	line-height: 150%;
+	padding: 10px;
+}
+
+/*Change the styling for all of the list 
+items in the nav section*/
+
+.topnav {
+	background-color: #886798;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	text-align: center;
+	padding: 20px 30px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #779867;
+	color: white;
+	font-weight:bold;
+}
+
+.header-book img {
+	position: relative;
+	width: 50px;
+	height: auto;
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 19px;
+}
+
+.center{
+	text-align: center;
+}
+.header-book h1 {
+	float: left;
+}
+
+
+/*Added this so the links stay the same color*/
+a:visited{color:white}
+
+a.skip-main {
+	left: -999px;
+	position: absolute;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+	color: #fff;
+	background-color: #000;
+	left: auto;
+	top: auto;
+	width: 30%;
+	height: auto;
+	overflow: auto;
+	margin: 10px 35%;
+	padding: 5px;
+	border-radius: 15px;
+	border: 4px solid yellow;
+	text-align: center;
+	font-size: 1.2em;
+	z-index: 999;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	text-align: center;
+	width:1000px;
+	height:auto;
+	margin-left: auto;
+	margin-right:auto;
+	border:20px solid gray;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.grid-container {
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(min-content, max-content);
+	margin-bottom: 0px;
+}
+
+.cell {
+	color: black;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 2rem;
+}
+
+.cell-1 {
+	background: #4f354d;
+	color:white;
+	text-align: center;
+}
+.cell-1 img{
+	padding: 0px;
+	margin: 0px;
+	width:50px;
+	height:auto;
+}
+
+.cell-2 {
+	background: #354f38;
+	color: white;
+}
+
+.cell-2 img {
+	padding: 0px;
+	margin: 0px;
+	width: 50px;
+	height: auto;
+}
+.cell-3 {
+	background: #4f354d;
+	color:white;
+}
+
+.cell-3 img {
+	padding: 0px;
+	margin: 0px;
+	width: 50px;
+	height: auto;
+}
+
+
+.grid-container2 {
+	margin: 2rem;
+	display: grid;
+	grid-template-columns: 500px 1fr;
+	grid-auto-rows: minmax(min-content, max-content);
+	margin-bottom: 0px;
+	grid-gap: 10px;
+}
+
+.cell2 {
+	color: black;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 0px;
+	justify-items: center;
+	align-items: center;
+}
+
+.cell2-1 {
+	background: white;
+	text-align: center;
+	justify-items: center;
+	align-items: center;
+}
+
+.cell2-1 img {
+	padding: 0px;
+	margin: 0px;
+	width: 500px;
+	height: auto;
+	float: right;
+	border-radius: 0px;
+}
+
+.cell2-1 p {
+	justify-items: center;
+	align-items: center;
+}
+
+.cell2-2 {
+	background: #4f354d;
+	color: white;
+	text-align: left;
+	justify-items: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.cell2-2 img {
+	float:right;
+	padding: 20px;
+	margin: 0px;
+	width: 400px;
+	height: auto;
+}
+
+.centerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
